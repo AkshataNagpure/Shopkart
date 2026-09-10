@@ -109,7 +109,7 @@ function Home() {
 
                 <div className="service-container">
                     <h3>Secure Payments</h3>
-                    <p>Shop with confidence knowing your payment information is safe and secure.</p>
+                    <p>Shop with confidence knowing your payment information is safe.</p>
                 </div>
 
             </section>
