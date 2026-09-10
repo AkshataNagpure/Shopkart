@@ -1,0 +1,65 @@
+.footer{
+
+    background:#131921;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+.footer h2{
+
+    margin-bottom:10px;
+
+    color:#ff9900;
+
+}
+
+
+.footer p{
+
+    color:#ddd;
+
+    margin:8px;
+
+}
+
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin:15px 0;
+
+}
+
+
+.footer-links span{
+
+    cursor:pointer;
+
+    font-size:14px;
+
+}
+
+
+.footer-links span:hover{
+
+    color:#ff9900;
+
+}
+
+
+.copyright{
+
+    font-size:13px;
+
+}
