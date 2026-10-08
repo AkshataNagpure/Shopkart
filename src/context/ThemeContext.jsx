@@ -1,26 +1,58 @@
-import { createContext,useReducer } from "react";
+// import { createContext,useReducer } from "react";
+// export const ThemeContext = createContext();
+// const initialState={
+//     theme:"light"
+// };
+
+// function themeReducer(state, action){
+//     switch (action.type){
+//         case "TOGGLE_THEME":
+//             return {
+//                 theme:state.theme ==="light" ? "dark" :"light"
+//             };
+//         default:
+//         return state;
+//     }
+// }
+
+// export function ThemeProvider({children}){
+//     const[state,dispatch]=useReducer(themeReducer,initialState);
+
+//     return(
+//         <ThemeContext.Provider value={{state,dispatch}}>
+//             {children}
+//         </ThemeContext.Provider>
+//     );
+// }
+import { createContext, useReducer } from "react";
+
 export const ThemeContext = createContext();
-const initialState={
-    theme:"light"
+
+const initialState = {
+  theme: "light",
 };
 
-function themeReducer(state, action){
-    switch (action.type){
-        case "TOGGLE_THEME":
-            return {
-                theme:state.theme ==="light" ? "dark" :"light"
-            };
-        default:
-        return state;
-    }
+function themeReducer(state, action) {
+  switch (action.type) {
+    case "TOGGLE_THEME":
+      return {
+        theme: state.theme === "light" ? "dark" : "light",
+      };
+
+    default:
+      return state;
+  }
 }
 
-export function ThemeProvider({children}){
-    const[state,dispatch]=useReducer(themeReducer,initialState);
+export function ThemeProvider({ children }) {
+  const [state, dispatch] = useReducer(
+    themeReducer,
+    initialState
+  );
 
-    return(
-        <ThemeContext.Provider value={{state,dispatch}}>
-            {children}
-        </ThemeContext.Provider>
-    );
+  return (
+    <ThemeContext.Provider value={{ state, dispatch }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 }

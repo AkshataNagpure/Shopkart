@@ -1,4 +1,4 @@
-
+/* 
 .cart-container {
   width: 90%;
   margin: 40px auto;
@@ -84,4 +84,162 @@
   .cart-item {
     width: 90%;
   }
+} */
+.cart-container {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 40px auto;
+
+  text-align: center;
+}
+
+.cart-container h1 {
+  margin-bottom: 30px;
+}
+
+.cart-products {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 25px;
+}
+
+.cart-item {
+  width: 240px;
+  min-height: 420px;
+
+  padding: 20px;
+
+  border: 1px solid #ddd;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+  color: #000000;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    border-color 0.3s;
+}
+
+.cart-item img {
+  width: 150px;
+  height: 170px;
+
+  object-fit: contain;
+
+  margin-bottom: 15px;
+}
+
+.cart-item h4 {
+  width: 100%;
+  min-height: 45px;
+
+  margin: 8px 0;
+
+  font-size: 16px;
+}
+
+.cart-item p {
+  margin: 8px 0;
+
+  font-size: 16px;
+}
+
+.quantity-control {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin: 12px 0;
+}
+
+.quantity-btn {
+  width: 35px;
+  height: 35px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #333;
+  color: white;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+.quantity-btn:hover {
+  background-color: #555;
+}
+
+.quantity {
+  min-width: 30px;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.subtotal {
+  font-weight: bold;
+}
+
+.remove-btn {
+  margin-top: auto;
+
+  padding: 9px 18px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #dc3545;
+  color: white;
+
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #bb2d3b;
+}
+
+.cart-bottom {
+  margin-top: 35px;
+
+  padding: 20px;
+
+  border-top: 1px solid #ddd;
+}
+
+.cart-bottom h2 {
+  margin-bottom: 20px;
+}
+
+.payment-btn {
+  padding: 12px 25px;
+
+  border: none;
+  border-radius: 7px;
+
+  background-color: #198754;
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.payment-btn:hover {
+  background-color: #157347;
 }

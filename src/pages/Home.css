@@ -7,6 +7,7 @@
     font-family: Arial, sans-serif;
 }
 
+
 /* ================= HERO SECTION ================= */
 
 .hero-section {
@@ -169,4 +170,54 @@
 .service-container p {
     color: #555;
     line-height: 1.6;
+}
+
+
+/* ================= DARK THEME ================= */
+
+.dark-theme .deals {
+    background-color: #181818;
+    color: white;
+}
+
+.dark-theme .deals > h1 {
+    color: white;
+}
+
+.dark-theme .product-box {
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme .product-box h3 {
+    color: white;
+}
+
+.dark-theme .product-box p {
+    color: #cccccc;
+}
+
+
+.dark-theme .services {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-theme .services > h1 {
+    color: white;
+}
+
+.dark-theme .service-container {
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme .service-container h3 {
+    color: white;
+}
+
+.dark-theme .service-container p {
+    color: #cccccc;
 }

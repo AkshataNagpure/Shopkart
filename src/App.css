@@ -1,4 +1,4 @@
-.counter {
+/* .counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -181,4 +181,35 @@
     right: 0;
     border-right-color: var(--border);
   }
+} */
+.app {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-theme .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #444;
+}
+
+.dark-theme .cart-item {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #444;
+}
+
+.dark-theme .cart-bottom {
+  border-color: #444;
+}
+
+.dark-theme .cart-container {
+  color: #ffffff;
 }
